@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <center>
+      <font color="green">
+        <h1>BUKA DI CONSOLE</h1>
+      </font>
+    </center>
+    <script>
+      let x = parseInt(prompt("Masukkan nilai x:"));
+      let y = parseInt(prompt("Masukkan nilai y:"));
+      let z = parseInt(prompt("Masukkan nilai z:"));
+
+      let terbesar;
+      if (x >= y && x >= z) {
+        terbesar = x;
+      } else if (y >= x && y >= z) {
+        terbesar = y;
+      } else {
+        terbesar = z;
+      }
+
+      let terkecil;
+      if (x <= y && x <= z) {
+        terkecil = x;
+      } else if (y <= x && y <= z) {
+        terkecil = y;
+      } else {
+        terkecil = z;
+      }
+
+      console.log("Nilai terbesar:", terbesar);
+      console.log("Nilai terkecil:", terkecil);
+      alert("Nilai terbesar: " + terbesar + "\nNilai terkecil: " + terkecil);
+    </script>
+  </body>
+</html>
